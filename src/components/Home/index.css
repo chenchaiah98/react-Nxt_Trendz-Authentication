@@ -1,0 +1,11 @@
+/* Write your CSS code here */
+.main-home-container {
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.home-clothes-image {
+  width: 400px;
+}

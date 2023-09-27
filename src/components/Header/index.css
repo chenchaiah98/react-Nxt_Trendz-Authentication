@@ -1,0 +1,28 @@
+/* Write your CSS code here */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.header-logo {
+  width: 200px;
+}
+.header-logo img {
+  width: 100%;
+}
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+.list-item {
+  margin: 0 10px;
+}
+.list-item a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.header-btn {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 8px 20px;
+}
