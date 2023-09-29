@@ -1,11 +1,33 @@
 /* Write your CSS code here */
 .main-home-container {
-  padding: 0 50px;
+  /* padding: 0 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  margin: auto;
+  margin-top: 30px;
 }
 .home-clothes-image {
   width: 400px;
+}
+.home-text-container {
+  padding-right: 80px;
+  width: 50%;
+}
+.home-text-container h1 {
+  font-size: 36px;
+}
+.home-text-container p {
+  font-size: large;
+  line-height: 25x;
+  color: #64748b;
+}
+.home-button {
+  background-color: #0b69ff;
+  padding: 8px 20px;
+  color: #ffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }

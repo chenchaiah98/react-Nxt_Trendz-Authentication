@@ -16,13 +16,13 @@ const Header = () => (
           <Link to="/">Home</Link>
         </li>
         <li className="list-item">
-          <Link to="/login">product</Link>
+          <Link to="/product">product</Link>
         </li>
         <li className="list-item">
-          <Link to="/contact">Cart</Link>
+          <Link to="/cart">Cart</Link>
         </li>
         <li className="list-item">
-          <Link to="/logout" className="header-btn">
+          <Link to="/login" className="header-btn">
             logout
           </Link>
         </li>

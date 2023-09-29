@@ -6,7 +6,7 @@ const Home = () => (
   <>
     <Header />
     <div className="main-home-container">
-      <div>
+      <div className="home-text-container">
         <h1>Clothes That Get YOU Noticed</h1>
         <p>
           Fashion is part of the daily air and it does not quite help that it
@@ -15,7 +15,7 @@ const Home = () => (
           that way you are. So, celebrate the seasons new and exciting fashion
           in your own way.
         </p>
-        <button type="button" className="home-btn">
+        <button type="button" className="home-button">
           Shop now
         </button>
       </div>
