@@ -18,12 +18,6 @@ class LoginForm extends Component {
   onLogin = async event => {
     event.preventDefault()
     const {username, password} = this.state
-    // const {history} = this.props
-    // if (userName !== '' && password !== '') {
-    //   console.log(history.location.pathname)
-    //   history.replace('/')
-    //   console.log(history.location.pathname)
-    // }
 
     const userDetails = {username, password}
     const url = 'https://apis.ccbp.in/login'
@@ -37,13 +31,13 @@ class LoginForm extends Component {
       this.onSubmitSuccess()
     } else {
       const apiError = data.error_msg
-      console.log(apiError)
       this.setState({error: apiError})
     }
   }
 
   onSubmitSuccess = () => {
     const {history} = this.props
+
     history.replace('/')
   }
 
@@ -63,26 +57,26 @@ class LoginForm extends Component {
             <div>
               <img
                 src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-                alt="form-logo"
+                alt="website logo"
                 className="login-logo"
               />
             </div>
 
             <form>
-              <lable htmlFor="username">username</lable>
+              <label htmlFor="username">USERNAME</label>
               <br />
               <input
                 type="text"
-                name="username"
+                id="username"
                 placeholder="username"
                 onChange={this.onUserNameChange}
               />
               <br />
-              <lable htmlFor="password">password</lable>
+              <label htmlFor="password">PASSWORD</label>
               <br />
               <input
                 type="password"
-                name="password"
+                id="password"
                 placeholder="password"
                 onChange={this.onPasswordChange}
               />
@@ -90,11 +84,11 @@ class LoginForm extends Component {
               <p>{error}</p>
 
               <button
-                type="button"
+                type="submit"
                 className="login-submit-button"
                 onClick={this.onLogin}
               >
-                Log in
+                Login
               </button>
             </form>
           </div>

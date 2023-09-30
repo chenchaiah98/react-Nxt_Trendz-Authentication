@@ -7,7 +7,7 @@ const Header = () => (
     <div className="header-logo">
       <img
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-        alt=""
+        alt="website logo"
       />
     </div>
     <div className="menu-list-container">
@@ -16,7 +16,7 @@ const Header = () => (
           <Link to="/">Home</Link>
         </li>
         <li className="list-item">
-          <Link to="/product">product</Link>
+          <Link to="/Products">Products</Link>
         </li>
         <li className="list-item">
           <Link to="/cart">Cart</Link>
